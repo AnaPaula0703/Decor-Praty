@@ -1,0 +1,107 @@
+:root {
+    --elementos-: rgb(217, 91, 137);
+    --hover-: rgb(209, 49, 108);
+    --fundo-formulario-: #f1d85c;
+    --fundo-: #805ba6;
+    --cor-letras-: #d9597a;
+    --inputs-registro-: #f1efcf;
+}
+
+body {
+    background-color: var(--fundo-);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+.card-login {
+    background: var(--fundo-formulario-);
+    width: 500px;
+    height: 700px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 80px;
+    border: solid 4px #561d92;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    justify-content: space-between; /* Alinhamento do conteúdo para se comportar como o sign-up */
+}
+
+h1 {
+    color: var(--cor-letras-);
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.conteudoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 30px; /* Ajuste para o espaçamento adequado entre os campos e o botão */
+    flex-grow: 1;
+}
+
+.conteudoForm label {
+    font-size: 22px;
+    color: var(--cor-letras-);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.conteudoForm input {
+    background-color: var(--inputs-registro-);
+    border: none;
+    color: black;
+    width: 100%;
+    padding: 18px;
+    font-size: 20px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.log-in {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px; /* Ajuste para o espaçamento do botão */
+}
+
+.log-in input {
+    background-color: var(--elementos-);
+    border: none;
+    padding: 18px 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 350px; /* Tamanho do botão igual ao dos inputs */
+}
+
+.log-in input:hover {
+    background-color: var(--hover-);
+}
+
+.cadastro {
+    margin-top: 15px; /* Ajuste para o link de cadastro não ficar muito distante */
+    font-size: 20px;
+}
+
+.cadastro a {
+    color: var(--elementos-);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
